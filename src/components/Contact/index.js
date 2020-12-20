@@ -42,24 +42,24 @@ function Contact() {
             <form id="contact-form" onSubmit={handleSubmit}>
                 {errorMessage && (
                     <div>
-                        <p className="error-text">{errorMessage}</p>
+                        <p className="error-text alert alert-warning">{errorMessage}</p>
                     </div>
                 )}
 
-                <div>
+                <div className="form-group">
                     <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleFormChange} />
+                    <input type="text" name="name" className="form-control bg-dark" defaultValue={name} onBlur={handleFormChange} />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="email">Email address:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleFormChange} />
+                    <input type="email" name="email" className="form-control bg-dark" defaultValue={email} onBlur={handleFormChange} />
                 </div>
-                <div>
+                <div className="form-group">
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleFormChange} />
+                    <textarea name="message" rows="5" className="form-control bg-dark" defaultValue={message} onBlur={handleFormChange} />
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" className="btn primary-button">Submit</button>
             </form>
         </section>
     );

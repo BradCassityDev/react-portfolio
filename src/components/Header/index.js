@@ -6,14 +6,23 @@ function Header(props) {
         selectedPage,
         setSelectedPage
     } = props;
+
     return (
         <header>
-            <h1>Brad Cassity</h1>
-            <Navigation
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-            />
+            <div className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a className="navbar-brand" href="/">Brad Cassity</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarText">
+                    <Navigation
+                        selectedPage={selectedPage}
+                        setSelectedPage={setSelectedPage}
+                    />
+                </div>
+            </div>
         </header>
+
     );
 }
 

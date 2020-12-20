@@ -5,35 +5,31 @@ function Portfolio() {
 
     const projects = [
         {
-            filename: 'project1.jpg',
-            title: 'Project 1',
-            link: 'google.com',
-            gitHubLink: 'https://github.com/BradCassityDev/react-portfolio'
+            filename: 'stock-tracker',
+            title: 'Stock Tracker',
+            link: 'https://utah-coding-bootcamp-project-1.github.io/stock-tracker/',
+            gitHubLink: 'https://github.com/Utah-Coding-Bootcamp-Project-1/stock-tracker'
         },
         {
-            filename: 'project2.jpg',
-            title: 'Project 2',
-            link: 'google.com',
-            gitHubLink: 'https://github.com/BradCassityDev/react-portfolio'
+            filename: 'git-ticketing-system',
+            title: 'Git Ticketing System',
+            link: 'https://git-ticketing-system.herokuapp.com/',
+            gitHubLink: 'https://github.com/BradCassityDev/git-ticketing-system'
         },
         {
-            filename: 'project3.jpg',
-            title: 'Project 3',
-            link: 'google.com',
-            gitHubLink: 'https://github.com/BradCassityDev/react-portfolio'
-        },
-        {
-            filename: 'project4.jpg',
-            title: 'Project 4',
-            link: 'google.com',
-            gitHubLink: 'https://github.com/BradCassityDev/react-portfolio'
+            filename: 'run-buddy',
+            title: 'Run Buddy',
+            link: 'https://bradcassitydev.github.io/run-buddy/',
+            gitHubLink: 'https://github.com/BradCassityDev/run-buddy'
         }
     ];
 
     return (
         <section>
             <h2>Portfolio</h2>
-            {projects.map((project) => (<Project project={project} key={project.title}/>))}
+            <div className="card-deck">
+                {projects.map((project) => (<Project project={project} key={project.title}/>))}
+            </div>
         </section>
     );
 }

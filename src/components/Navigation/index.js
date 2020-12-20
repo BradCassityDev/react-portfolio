@@ -12,25 +12,25 @@ function Navigation(props) {
     }, [selectedPage]);
 
     return (
-        <nav>
-            <ul>
-                <li>
-                    <span onClick={() => setSelectedPage('About')}>
+        <nav className="float-right">
+            <ul className="navbar-nav mr-auto">
+                <li className="nav-item">
+                    <span className={`nav-link ${selectedPage === 'About' && " active"}`} onClick={() => setSelectedPage('About')}>
                         About
                     </span>
                 </li>
-                <li>
-                    <span onClick={() => setSelectedPage('Portfolio')}>
+                <li className="nav-item">
+                    <span className={`nav-link ${selectedPage === 'Portfolio' && " active"}`} onClick={() => setSelectedPage('Portfolio')}>
                         Portfolio
                     </span>
                 </li>
-                <li>
-                    <span onClick={() => setSelectedPage('Contact')}>
+                <li className="nav-item">
+                    <span className={`nav-link ${selectedPage === 'Contact' && " active"}`} onClick={() => setSelectedPage('Contact')}>
                         Contact
                     </span>
                 </li>
-                <li>
-                    <span onClick={() => setSelectedPage('Resume')}>
+                <li className="nav-item">
+                    <span className={`nav-link ${selectedPage === 'Resume' && " active"}`} onClick={() => setSelectedPage('Resume')}>
                         Resume
                     </span>
                 </li>

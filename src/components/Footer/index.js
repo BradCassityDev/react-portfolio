@@ -4,7 +4,23 @@ function Footer() {
 
     return (
         <footer>
-            <p>footer</p>
+            <hr />
+            <div>
+                <p>footer</p>
+                <i class="fab fa-linkedin"></i>
+                <ul>
+                    <li>
+                        <i className="fab fa-github"></i>
+                    </li>
+                    <li>
+                        <i className="fab fa-linkedin"></i>
+                    </li>
+                    <li>
+                        <i className="fab fa-github"></i>
+                    </li>
+                </ul>
+                
+            </div>
         </footer>
     );
 }
