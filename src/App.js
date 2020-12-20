@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 function App() {
+  const [selectedPage, setSelectedPage] = useState('About');
+
+  // Toggle page function
+  function pageToggle() {
+    let page = '';
+
+    switch(selectedPage) {
+      case 'Portfolio':
+        page = (<Portfolio></Portfolio>);
+        break;
+      case 'Contact':
+        page = (<Contact></Contact>);
+        break;
+      case 'Resume':
+        page = (<Resume></Resume>);
+        break;
+      default:
+        page = (<About></About>);
+    }
+    return page;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
+      <main>
+        <div>
+          {pageToggle()}
+        </div>
+      </main>
+      <Footer></Footer>
     </div>
   );
 }
