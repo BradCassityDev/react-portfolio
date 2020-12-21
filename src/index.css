@@ -122,6 +122,16 @@ footer .fab {
 
 .profile-image {
   max-width: 250px;
-  float: left;
   padding-right: 15px;
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-image {
+    margin: 0 auto;
+    display: block;
+    
+    width: 100%;
+    text-align: center;
+  }
 }

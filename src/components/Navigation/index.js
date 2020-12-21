@@ -12,7 +12,7 @@ function Navigation(props) {
     }, [selectedPage]);
 
     return (
-        <nav className="float-right">
+        <nav className="">
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
                     <span className={`nav-link ${selectedPage === 'About' && " active"}`} onClick={() => setSelectedPage('About')}>
