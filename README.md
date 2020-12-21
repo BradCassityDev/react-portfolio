@@ -20,4 +20,4 @@ Deployed Application: [Personal Portfolio]()
 GitHub profile [BradCassityDev](https://github.com/BradCassityDev)
 
 ## Application
-![Working Project Screenshot](/app.png)
+![Working Project Screenshot](/app.PNG)
