@@ -4,22 +4,16 @@ function Footer() {
 
     return (
         <footer>
-            <hr />
             <div>
-                <p>footer</p>
-                <i class="fab fa-linkedin"></i>
-                <ul>
-                    <li>
-                        <i className="fab fa-github"></i>
-                    </li>
-                    <li>
-                        <i className="fab fa-linkedin"></i>
-                    </li>
-                    <li>
-                        <i className="fab fa-github"></i>
-                    </li>
-                </ul>
-                
+                <a href="https://github.com/BradCassityDev" target="_blank">
+                    <i class="fab fa-github-square fa-3x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bradley-cassity-56b664165/" target="_blank">
+                    <i className="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="https://www.facebook.com/bradley.cassity" target="_blank">
+                    <i className="fab fa-facebook-square fa-3x"></i>
+                </a>
             </div>
         </footer>
     );
