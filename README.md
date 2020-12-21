@@ -13,7 +13,7 @@ Showcasing my best work using the latest technologies. This application was deve
 
 Users can use this application to learn more about Brad Cassity and view recent work on his portfolio.
 
-Deployed Application: [Personal Portfolio]()
+Deployed Application: [Personal Portfolio](https://bradcassitydev.github.io/react-portfolio/)
 
 ## Questions
 
