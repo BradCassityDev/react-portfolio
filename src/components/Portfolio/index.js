@@ -45,7 +45,7 @@ function Portfolio() {
     return (
         <section>
             <h2>Portfolio</h2>
-            <div className="card-deck">
+            <div className="wrapper">
                 {projects.map((project) => (<Project project={project} key={project.title}/>))}
             </div>
         </section>
