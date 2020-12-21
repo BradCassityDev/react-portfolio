@@ -5,10 +5,31 @@ function Resume() {
     return (
         <section>
             <h2>Resume</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel nunc vel turpis placerat dictum. Donec vitae metus sed nulla elementum rutrum pulvinar eu elit. Ut bibendum lectus magna, ac congue risus sodales id. Nullam porta, ante ac ullamcorper condimentum, augue sapien laoreet tortor, sed elementum quam nulla vitae enim. Proin eget nunc sapien. Integer vitae enim ornare, tincidunt nisi vitae, lacinia metus. Nam dapibus aliquam massa, vel iaculis tortor finibus sed. In metus odio, auctor eu magna et, pulvinar convallis ligula. Curabitur laoreet sollicitudin vestibulum. Aenean tincidunt mi fringilla nisi sagittis tempus.
 
-                Morbi magna mauris, facilisis in gravida nec, auctor et metus. Phasellus elementum quam vitae dignissim suscipit. In hac habitasse platea dictumst. Aenean rutrum felis sit amet tincidunt sagittis. Quisque et elit ligula. Praesent a metus vel nibh semper egestas. Phasellus iaculis eros quis dui consectetur volutpat. Cras vel erat vel orci tincidunt viverra ac at nisi. In vel sagittis ante. Phasellus faucibus metus nulla, aliquam suscipit augue lobortis vel. Suspendisse id mauris sed risus auctor convallis sed quis urna. Cras et tempus nulla. Nunc consectetur posuere malesuada.
-            </p>
+            <span>
+                <a href="../../assets/documents/Resume.docx" download>Download Resume</a>
+            </span>
+            
+            <div>
+                <h3>Technical Skills</h3>
+                <ul className="list-group">
+                    <li className="list-group-item">HTML</li>
+                    <li className="list-group-item">CSS</li>
+                    <li className="list-group-item">Bootstrap</li>
+                    <li className="list-group-item">Responsive Design</li>
+                    <li className="list-group-item">Javascript</li>
+                    <li className="list-group-item">JQuery</li>
+                    <li className="list-group-item">React</li>
+                    <li className="list-group-item">Ajax</li>
+                    <li className="list-group-item">APIs</li>
+                    <li className="list-group-item">Node</li>
+                    <li className="list-group-item">Express</li>
+                    <li className="list-group-item">REST / CRUD</li>
+                    <li className="list-group-item">MySQL / Sequelize</li>
+                    <li className="list-group-item">MongoDB / Mongoose</li>
+                </ul>
+            </div>
+            
         </section>
     );
 }

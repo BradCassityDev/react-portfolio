@@ -80,16 +80,34 @@ form {
   max-height: 200px;
 }
 
-.fab {
+footer .fab {
   opacity: 0.4;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 
 .fab:hover {
   opacity: 1;
+  color: var(--primary-hover-color);
 }
 
 .card-deck {
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.github-button {
+  padding: 0 !important;
+  margin-right: 15px;
+}
+
+.list-group-item {
+  background-color: var(--main-bg);
+}
+
+.profile-image {
+  max-width: 250px;
+  float: left;
+  padding-right: 15px;
 }
