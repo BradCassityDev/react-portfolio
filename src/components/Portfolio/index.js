@@ -5,6 +5,12 @@ function Portfolio() {
 
     const projects = [
         {
+            filename: 'trackt.PNG',
+            title: 'TRACKT',
+            link: 'https://fierce-basin-22098.herokuapp.com/',
+            gitHubLink: 'https://github.com/BradCassityDev/trackt'
+        },
+        {
             filename: 'stock-tracker.PNG',
             title: 'Stock Tracker',
             link: 'https://utah-coding-bootcamp-project-1.github.io/stock-tracker/',
